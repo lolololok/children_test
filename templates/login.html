@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <style>
+
+    </style>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap-3.3.7-dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'mystyle.css' %}">
+</head>
+<body>
+
+<div id="web_bg" style='background-image: url("{% static 'chengjian_img/338905-106.jpg' %}")'>
+</div>
+    <div class="container login">
+        <div class="row col-md-6 col-md-offset-3">
+            <form class="form-horizontal">
+                {% csrf_token %}
+                <div class="form-group user">
+                    <label for="inputEmail3" class="col-sm-2 control-label">用户</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="inputEmail3" placeholder="User">
+                    </div>
+                    <span class="error0"></span>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+                    <div class="col-sm-6">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                    </div>
+                    <span class="error1"></span>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="button" class="btn btn-primary sub">登录</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+<script src="{% static 'jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'bootstrap-3.3.7-dist/js/bootstrap.min.js' %}"></script>
+<script>
+    $('#inputEmail3').on('blur', function () {
+        var input_date = $(this).val();
+        $.ajax({
+            url: '/check_login/',
+            type: 'get',
+            data: {
+                input_date: input_date,
+            },
+            success:function (msg) {
+                var $Elen = $('.error0');
+                if(msg.state){
+                    $('.error0').text('');
+                }
+                else {
+                    $('.error0').text(msg.msg);
+                    $Elen.css('color','red')
+                }
+            }
+
+        })
+    });
+    $('.btn').on('click',function () {
+        var user = $('#inputEmail3').val();
+        var pwd  = $('#inputPassword3').val();
+        $.ajax({
+            url: '/login/',
+            type: 'post',
+            data: {
+                user: user,
+                pwd:  pwd,
+                csrfmiddlewaretoken: $('[name = "csrfmiddlewaretoken"]').val()
+            },
+            success:function (ret) {
+                var $Elen = $('.error1');
+                if (ret.state) {
+                    if (ret.page ==='m'){
+                        location.href = '/manager_page/'
+                    }
+                    else if (ret.page ==='t'){
+                        location.href = '/teacher_page/'
+                    }
+                    else
+                    {
+                        location.href = '/student_page/'
+                    }
+                }
+                else{
+                    $Elen.text(ret.msg);
+                    $Elen.css('color','red');
+                }
+            }
+        })
+    });
+
+    $("body").on("keydown",function(event){
+        if(event.keyCode === 13)
+        {
+            $(".sub").trigger("click");
+        }
+});
+
+</script>
+</body>
+</html>

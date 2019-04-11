@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生编辑</title>
+    {% load static %}
+    <link href="{% static 'bootstrap-3.3.7-dist/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'mystyle.css' %}">
+</head>
+<body>
+<div id="con_img" style='background-image: url("{% static 'chengjian_img/018de657bbc3c70000018c1bcfd6d7.jpg@1280w_1l_2o_100sh.jpg' %}")'></div>
+<div class="edit container col-md-4 col-md-offset-4">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">添加</h3>
+        </div>
+        <div class="panel-body">
+            <form method="post" action="/teacher/student/add/">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="user">姓名</label>
+                    <input name="user" type="text" class="form-control" id="user" value="">
+                </div>
+                    <div class="form-group">
+                        <label for="user">学号</label>
+                        <input name="account" type="text" class="form-control" id="account" value="">
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="user">密码</label>
+                        <input name="pwd" type="password" class="form-control" id="pwd" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="class">班级:</label>
+                        <select name="class_id" id="class" class="form-control">
+                            {% for class in class_objs %}
+                                <option value="{{ class.pk }}">{{ class }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-success">提交</button>
+                    <button type="button" class="btn btn-danger pull-right" id="cancel">取消</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+<script src="{% static 'jquery-3.2.1.min.js' %}"></script>
+<script>
+var $Elen = $('#account');
+$Elen.on('blur',function () {
+    var account = $Elen.val();
+    $.ajax({
+        url:'/accountcheck/',
+        type:'get',
+        data:{
+            account:account
+        },
+        success:function (msg) {
+            var $Elenspan = $('.error');
+            if (msg.state){
+                $Elenspan.text(msg.warring);
+                $Elenspan.css('color','red');
+            }
+            else {
+                $Elenspan.text(msg.warring)
+            }
+        }
+    })
+});
+$('#cancel').on('click',function () {
+    location.href = '/teacher_page/'
+})
+</script>
+</body>
+</html>

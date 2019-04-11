@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>往期作业</title>
+    {% load static %}
+    <link href="{% static 'bootstrap-3.3.7-dist/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'mystyle.css' %}">
+</head>
+<body>
+<div id="con_img"
+     style='background-image: url("{% static 'chengjian_img/018de657bbc3c70000018c1bcfd6d7.jpg@1280w_1l_2o_100sh.jpg' %}")'></div>
+<div class="container" style="padding-top: 50px">
+    <div class="row">
+    <div class="col-md-1">
+        <a href="/teacher_page/" class="btn btn-success">返回</a>
+    </div>
+    <div class="col-md-11">
+        {% for homework in homework_list %}
+            <div class="panel panel-warning" id="homework_item">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{{ homework.title }}
+                        ({% for class in homework.classes.iterator %}
+                            {{ class }}
+                        {% endfor %}) 班
+                        <button type="button" class="close" aria-label="Close" homework = "{{ homework.pk }}"><span aria-hidden="true">&times;</span></button>
+                    </h3>
+
+                </div>
+                <div class="panel-body">
+                    <p>
+                        {{ homework.content }}
+
+                    </p>
+                    <span class="pull-right">{{ homework.create_time|date:"Y-m-d H:m:s" }}</span>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    </div>
+</div>
+{% csrf_token %}
+<script src="{% static 'jquery-3.2.1.min.js' %}"></script>
+<script>
+    $('.close').on('click',function () {
+        var homework_id = $(this).attr('homework');
+        $.ajax({
+            url:'/teacher/pass_homework/0/',
+            type:'post',
+            data:{
+                homework_id:homework_id,
+                csrfmiddlewaretoken: $('[name = "csrfmiddlewaretoken"]').val()
+            }
+        })
+    })
+</script>
+</body>
+</html>
