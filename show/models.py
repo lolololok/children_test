@@ -34,6 +34,7 @@ class Student(models.Model):
     create_time = models.DateTimeField(auto_now_add=True)
     classes = models.ForeignKey(to='Class')
     role = models.ForeignKey(to='Role')
+    img_a = models.CharField(max_length=64,default=None)
     def __str__(self):
         return self.name
 

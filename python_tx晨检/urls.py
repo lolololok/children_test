@@ -24,10 +24,10 @@ urlpatterns = [
     url(r'^check_login/', views.check_login),
     url(r'^manager_page/', views.manager_page),
     url(r'^teacher_page/', views.teacher_page),
-    url(r'^student_page/', views.student_page),
     url(r'^teacher/', include(show_urls)),
     url(r'^logout/', views.logout),
     url(r'^accountcheck/', views.accountcheck),
     url(r'^repassword/', views.repassword),
     url(r'^repassword_check/', views.repassword_check),
+    url(r'^student/([0-9]+)/$', views.student_detail),
 ]

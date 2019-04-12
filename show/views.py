@@ -23,9 +23,11 @@ def login(request):
                 msg['state'] = True
                 msg['page'] = 't'
             elif models.Student.objects.filter(account=ret):
-
+                sid = models.Student.objects.filter(account_id=ret.pk).first().pk
+                print(sid)
                 msg['state'] = True
                 msg['page'] = 's'
+                msg['sid'] = sid
             else:
                 msg['state'] = False
                 msg['msg'] = '密码不正确'
@@ -121,12 +123,6 @@ def teacher_page(request):
 
 
 
-
-
-def student_page(request):
-    return HttpResponse("S")
-
-
 # from django.forms import ModelForm
 # class StudentForm(ModelForm):
 #     class Meta:
@@ -172,9 +168,14 @@ def student_add(request):
     return render(request,'student_add.html',locals())
 
 def student_detail_list(request):
+    if request.method == "GET":
+        cid = request.session.get("user_id")
+        class_id = models.Teacher.objects.filter(account_id=cid).first().manager_class_id
+        student_obj_list = models.Student.objects.filter(classes_id=class_id).all()
+        return render(request,'student_detail_list.html',locals())
 
-    a = range(10)
-    return render(request,'student_detail_list.html',locals())
+def student_detail(request,sid):
+    return render(request,"student_page.html")
 
 def accountcheck(request):
     msg = {"state":False,'warring':""}

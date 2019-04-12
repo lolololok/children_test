@@ -13,24 +13,18 @@
 <div id="con_img" style='background-image: url("{% static 'chengjian_img/timg.jpg' %}")'></div>
 <div class="container">
     <div class="row">
-        {%for i in a%}
+        {%for student_obj in student_obj_list%}
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img src="..." alt="...">
+                    <img src="{% static "chengjian_img/timg.jpg" %}" alt="...">
                     <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <p>...</p>
-                        <p>
-                            <a href="#" class="btn btn-primary" role="button">Button</a>
-                            <a href="#" class="btn btn-default" role="button">Button</a>
-                        </p>
+                        <h3>{{ student_obj.name }}</h3>
+                        <p><a href="/student/{{ student_obj.pk }}/" style="text-decoration: none;padding-left: 250px">查看详情</a></p>
                     </div>
                 </div>
             </div>
         {% endfor %}
     </div>
-
 </div>
-
 </body>
 </html>

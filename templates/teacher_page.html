@@ -57,7 +57,7 @@
     <a href="/teacher/homework/" class="list-group-item list-group-item-success">布置作业</a>
     <a href="/teacher/pass_homework/{{ teacher_obj.pk }}/" class="list-group-item list-group-item-success">查看往期作业</a>
     {% if 'view_detail' in permission_list %}
-        <a href="/teacher/student_detail_list/" class="list-group-item list-group-item-info">查看学生详情</a>
+        <a href="/teacher/student/detail_list/" class="list-group-item list-group-item-info">查看学生详情</a>
     {% endif %}
     <a class="list-group-item list-group-item-danger manage"><h4>管理班级</h4><span class="caret"></span></a>
     <div class="hidden" id="class_show">
