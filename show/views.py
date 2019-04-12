@@ -171,6 +171,11 @@ def student_add(request):
         return redirect('/teacher_page/')
     return render(request,'student_add.html',locals())
 
+def student_detail_list(request):
+
+    a = range(10)
+    return render(request,'student_detail_list.html',locals())
+
 def accountcheck(request):
     msg = {"state":False,'warring':""}
     account = request.GET.get('account')

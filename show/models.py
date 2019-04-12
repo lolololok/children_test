@@ -42,6 +42,7 @@ class Teacher(models.Model):
     account = models.ForeignKey(to='Account')
     create_time = models.DateTimeField(auto_now_add=True)
     role = models.ManyToManyField(to='Role')
+    manager_class_id = models.IntegerField(null=True,default=None)
     def __str__(self):
         return self.name
 
