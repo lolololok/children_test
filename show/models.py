@@ -51,7 +51,7 @@ class Teacher(models.Model):
 class Homework(models.Model):
     title = models.CharField(max_length=20)
     teacher = models.ForeignKey(to='Teacher')
-    content = models.CharField(max_length=100)
+    content = models.CharField(max_length=300)
     classes = models.ManyToManyField(to='Class')
     create_time = models.DateTimeField(auto_now_add=True)
     delay_time = models.DateTimeField()

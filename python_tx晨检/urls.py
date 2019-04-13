@@ -15,19 +15,27 @@ Including another URLconf
 """
 from django.conf.urls import url,include
 from django.contrib import admin
-from show import views
 from show import urls as show_urls
+from show.views import login_view,manager_view,password_view,teacher_view,student_view,index
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^login/', views.login),
-    url(r'^check_login/', views.check_login),
-    url(r'^manager_page/', views.manager_page),
-    url(r'^teacher_page/', views.teacher_page),
+    url(r'^index/', index.index),
+
+
+    url(r'^login/', login_view.login),
+    url(r'^check_login/', login_view.check_login),
+    url(r'^logout/', login_view.logout),
+
+    url(r'^manager_page/', manager_view.manager_page),
+
+    url(r'^teacher_page/', teacher_view.teacher_page),
     url(r'^teacher/', include(show_urls)),
-    url(r'^logout/', views.logout),
-    url(r'^accountcheck/', views.accountcheck),
-    url(r'^repassword/', views.repassword),
-    url(r'^repassword_check/', views.repassword_check),
-    url(r'^student/([0-9]+)/$', views.student_detail),
+    url(r'^accountcheck/', teacher_view.accountcheck),
+
+    url(r'^repassword/', password_view.repassword),
+    url(r'^repassword_check/', password_view.repassword_check),
+
+    url(r'^student/([0-9]+)/$', student_view.student_detail),
 ]

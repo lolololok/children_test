@@ -11,6 +11,7 @@
 </head>
 <body>
 <div id="con_img" style='background-image: url("{% static 'chengjian_img/timg.jpg' %}")'></div>
+{% include 'teacher_nav.html' %}
 <div class="container">
     <div class="row">
         {%for student_obj in student_obj_list%}

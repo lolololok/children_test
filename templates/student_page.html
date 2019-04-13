@@ -12,6 +12,7 @@
     <!-- Bootstrap core CSS -->
     {% load static %}
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'fontawesome/css/font-awesome.min.css' %}">
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="{% static 'mystyle.css' %}">
@@ -20,43 +21,14 @@
 <!-- NAVBAR
 ================================================== -->
 <body>
+{% if role == "s" %}
+    {% include "student_nav.html" %}
+{% elif role == "t" %}
+    {% include 'teacher_nav.html' %}
+{% endif %}
 
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">bbb</a>
-        </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="/repassword/">修改密码</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false"> 以往详情<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Link</a></li>
-                <li><a href="/logout/">注销</a></li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
 <!-- Marketing messaging and featurettes
   ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
@@ -69,17 +41,17 @@
         <div class="col-lg-4">
             <img class="img-circle" src="{% static 'student_page_tag/timg.jpg' %}" alt="Generic placeholder image"
                  width="140" height="140">
-            <h2>身高:</h2>
+            <h2 class="height">身高:{{ sign.height }}CM</h2>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
             <img class="img-circle" src="{% static 'student_page_tag/timg (1).jpg' %}" alt="Generic placeholder image"
                  width="140" height="140">
-            <h2>体重:</h2>
+            <h2 class="weight">体重:{{ sign.weight }}Kg</h2>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
             <img class="img-circle" src="{% static 'student_page_tag/timg (2).jpg' %}" alt="Generic placeholder image"
                  width="140" height="140">
-            <h2>体温:</h2>
+            <h2 class="temperature">体温:{{ sign.temperature }}度</h2>
         </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
@@ -109,6 +81,65 @@
                  alt="Generic placeholder image">
         </div>
     </div>
+
+    {% if role == "s" %}
+
+            <div class="media" id="homework">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object"
+                             src="{% static 'student_page_tag/u=3518659575,180584971&fm=26&gp=0.jpg' %}"
+                             alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    {% for homwork in homework_obj_list %}
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">家庭作业 <p class="pull-right">截至到:{{ homwork.create_time|date }}</p></h2>
+                        </div>
+                        <div class="panel-body">
+                            <h3>{{ homwork.title }}</h3>
+                            <p>{{ homwork.content }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+    {% endif %}
 </div>
+{% csrf_token %}
+<script>
+    $(".sign-time").on("click", function () {
+        var sign_id = $(this).attr("id");
+        $.ajax({
+            url: '/student/{{ sid }}/',
+            type: "post",
+            data: {
+                sign_id: sign_id,
+                csrfmiddlewaretoken: $('[name = "csrfmiddlewaretoken"]').val()
+            },
+            success: function (data) {
+                $(".time").text(data.time);
+                $(".height").text('身高:' + data.height + 'CM');
+                $(".weight").text('体重:' + data.weight + 'Kg');
+                $(".temperature").text('体温:' + data.temperature + '度');
+            }
+        })
+    })
+
+
+</script>
+{#    <script>#}
+{#    function onTopClick() {#}
+{#         window.location.hash = "#abc";#}
+{#       }#}
+{#    </script>#}
+{#    <input  type="button" name="Submit" value="提交"  onclick="javascript:onTopClick();" />#}
+{##}
+{##}
+{#    <div id="abc">跳转到的位置</div>#}
+
 </body>
 </html>

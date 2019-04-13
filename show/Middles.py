@@ -1,7 +1,7 @@
 from django.utils.deprecation import MiddlewareMixin
 from django.shortcuts import HttpResponse
 import re
-URL = ['/login/','/admin/.*','/check_login/']
+URL = ['/login/','/admin/.*','/check_login/','/index/']
 class RequestAllow(MiddlewareMixin):
     def process_request(self,request):
         current_path = request.path
