@@ -16,13 +16,17 @@ def repassword(request):
         try:
             npwd = request.POST.get('npwd')
             rnpwd = request.POST.get('rnpwd')
-            if npwd == rnpwd:
-                msg['state'] = False
-                user_obj = models.Account.objects.get(pk=user_id)
-                user_obj.password = rnpwd
-                user_obj.save()
+            opwd = request.POST.get('opwd')
+            if models.Account.objects.filter(pk=user_id).first().password == opwd:
+                if npwd == rnpwd:
+                    msg['state'] = False
+                    user_obj = models.Account.objects.get(pk=user_id)
+                    user_obj.password = rnpwd
+                    user_obj.save()
+                else:
+                    msg['warring'] = '两次密码不一致'
             else:
-                msg['warring'] = '两次密码不一致'
+                msg['warring'] = '请正确输入原始密码'
             return JsonResponse(msg)
         except Exception as e:
             return HttpResponse("资源不存在！")

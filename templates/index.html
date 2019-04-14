@@ -2,43 +2,160 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+{#    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">#}
     <title>Title</title>
-        {% load static %}
+    {% load static %}
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'fontawesome/css/font-awesome.min.css' %}">
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{#      <script>#}
+{#         //通过window.screen.width获取屏幕的宽度#}
+{#         var offWidth = window.screen.width / 30; //这里用宽度/30表示1rem取得的px#}
+{#         document.getElementsByTagName("html")[0].style.fontSize = offWidth + 'px'; //把rem的值复制给顶级标签html的font-size#}
+{#     </script>#}
     <link rel="stylesheet" href="{% static 'mystyle.css' %}">
 
 </head>
 <body>
-<div class="bs-example" data-example-id="simple-carousel">
+<div class="center">
+    <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img style="height: 40px;width:40px;margin-top: -10px" src="{% static 'index_img/9345d688d43f8794fb8e0ca2d21b0ef41ad53acc.jpg' %}" alt=""></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#">联系我们</a></li>
+{#                <li><a href="#"></a></li>#}
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/login/">登录</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="bs-example" data-example-id="simple-carousel" style="margin-top: -20px">
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div  class="item active" >
-          <img class="big-img" alt="First slide [900x500]" src="{% static 'index_img/QQ图片20190413191926.jpg' %}" data-holder-rendered="true">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+        </ol>
+        <div class="carousel-inner big-img" role="listbox">
+            <div class="item active">
+                <img alt="First slide" src="{% static 'index_img/QQ图片20190413191926.jpg' %}"
+                     data-holder-rendered="true">
+            </div>
+            <div class="item">
+                <img alt="Second slide" src="{% static 'index_img/QQ图片20190413195809.jpg' %}"
+                     data-holder-rendered="true">
+            </div>
+            <div class="item">
+                <img alt="Third slide" src="{% static 'index_img/QQ图片20190413190942.png' %}"
+                     data-holder-rendered="true">
+            </div>
         </div>
-        <div class="item">
-          <img class="big-img" alt="Second slide [900x500]" src="{% static 'index_img/8IYV(}(NJE3UPC)KJJVEH}2.png' %}" data-holder-rendered="true">
-        </div>
-        <div class="item">
-          <img class="big-img" alt="Third slide [900x500]" src="{% static 'index_img/QQ图片20190413190942.png' %}" data-holder-rendered="true">
-        </div>
-      </div>
-      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-  </div>
+</div>
+
+<div class="container" style="margin-top: 100px">
+    <div class="row">
+        <div class="media col-md-10 col-md-offset-1">
+            <div class="media-body">
+                <h2 class="media-heading">关于我们</h2>
+                <hr>
+                <p style="font-size: large;color: #8c8c8c">
+                    我们团队来自于西安邮电大学自动化学院碣石微控236实验室，
+                    我们实验室有过多项作品多次获得省级，国家级比赛荣誉，
+                    我们的团队队员来自交叉学科，涵盖物联网、自动化、通信、控制方面的人才，
+                    我们的技术团队勇于创新、齐心协力同时也有着较为丰富的大赛经验。
+                </p>
+                <div style="margin-top: 80px">
+                    <a href="http://www.xiyou.edu.cn/"><button type="button" class="btn btn-warning btn-lg">了解更多</button></a>
+                </div>
+            </div>
+            <div class="media-right">
+                <a href="#">
+                    <img style="height: 300px;width: 300px" class="media-object"
+                         src="{% static 'index_img/QQ图片20190413191926.jpg' %}" alt="...">
+                </a>
+            </div>
+        </div>
+        <div class="col-md-10 col-md-offset-1" style="margin-top:100px">
+            <h3 style="text-align: center">智能儿童晨检机器人</h3>
+            <p style="font-size: large;color: #8c8c8c;text-align: center">
+                将家校双方密切地联系起来，帮助儿童更加健康快乐地成长！
+            </p>
+            <video style="width: 1000px;height: 600px"
+                   src="{% static 'index_video/55aec567ac100ecd01ade33042bc492b.mp4' %}" controls="controls">
+                your browser does not support the video tag
+            </video>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron" style="margin-top: 100px">
+    <div class="row">
+        <div class="col-md-5 col-sm-offset-1">
+            <img style="height: 500px" src="{% static 'index_img/123.jpg' %}" alt="">
+        </div>
+        <div class="col-md-6">
+            <h2>智能儿童晨检机器人</h2>
+            <p class="text-left" style="margin-right: 100px;display: block">
+                儿童晨检机器人采用嵌入式技术、 传感器技术、无线通信技术自动控制技术，
+                研发出一种智能化、安全化、人性化的儿童晨检机器人。
+                数秒内完成针对儿童的身高、体重，体温及手口部图像的信息采集、
+                同时将当天的天气情况，学校任务以及活动事项的信息同时上传至服务器，
+                再由服务器通过无线通信模块发送到客户端，
+                可供家长和老师在客户端APP查看儿童个人信息
+            </p>
+        </div>
+    </div>
+
+</div>
+<div class="container" style="margin-top: 100px">
+    <div class="row">
+        <div class="media col-md-10 col-md-offset-1">
+            <div class="media-body">
+                <h2 class="media-heading">家校互动APP</h2>
+                <hr>
+                <p style="font-size: large;color: #8c8c8c">
+                    我们的家校互动APP考虑细致，功能齐全，
+                    客户端包含家长端和老师端，包括儿童体检结果信息查询，
+                    孩子接送信息查询，作业信息查询，当天天气信息查询，
+                    以及系统设置功能
+                </p>
+            </div>
+            <div class="media-right " >
+                <img  style="height: 400px;width: 500px" class="media-object "
+                         src="{% static 'index_img/a.png' %}" alt="...">
+            </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
 </body>
 </html>
