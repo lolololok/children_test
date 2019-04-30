@@ -1,0 +1,405 @@
+[30/Apr/2019 05:39:47] "GET /index/ HTTP/1.1" 200 7496
+[30/Apr/2019 05:39:56] "GET /index/ HTTP/1.1" 200 7496
+[30/Apr/2019 05:40:00] "GET /login/ HTTP/1.1" 200 3861
+[30/Apr/2019 05:40:03] "GET /check_login/?input_date=06161089 HTTP/1.1" 200 26
+[30/Apr/2019 05:40:06] "POST /login/ HTTP/1.1" 200 69
+[30/Apr/2019 05:40:10] "POST /login/ HTTP/1.1" 200 39
+[30/Apr/2019 05:40:10] "GET /teacher_page/ HTTP/1.1" 200 8303
+[30/Apr/2019 05:40:12] "GET /teacher/homework/ HTTP/1.1" 200 3640
+[30/Apr/2019 05:40:14] "GET /teacher_page/ HTTP/1.1" 200 8303
+[30/Apr/2019 05:40:17] "GET /teacher/student/detail_list/ HTTP/1.1" 200 3028
+[30/Apr/2019 05:40:18] "GET /student/23/ HTTP/1.1" 200 5017
+[30/Apr/2019 05:40:21] "GET /teacher_page/ HTTP/1.1" 200 8303
+[30/Apr/2019 05:40:32] "GET /student/23/ HTTP/1.1" 200 5017
+[30/Apr/2019 05:40:34] "GET /logout/ HTTP/1.1" 200 3861
+[30/Apr/2019 05:40:35] "POST /login/ HTTP/1.1" 200 69
+[30/Apr/2019 05:40:35] "GET /index/ HTTP/1.1" 200 7496
+[30/Apr/2019 05:40:48] "GET /index/ HTTP/1.1" 200 7496
+[30/Apr/2019 05:40:49] "GET /favicon.ico HTTP/1.1" 200 18
+[30/Apr/2019 05:41:08] "POST /v1/cmdb/community/register HTTP/1.1" 200 18
+[30/Apr/2019 05:41:38] "GET /index/?nsukey=jU53PhlTAFJaAQSrcOG80HYyBD86vTu%2FDOvS5%2BAjogbTikpwJ9K2AHSK8i70Ph6muV1f59hhrLRbr32kLIJyuzotfMACbv42FXkmTrcixEweqUNfnm0rZ3XQV0NbJ5HgR33OOi7Be7jQQBXaOtsjqTmiz2vdsU9FvyVEtc8ZChkHbZOzT%2FSDSb3PgF%2B67inK HTTP/1.1" 200 7496
+[30/Apr/2019 05:41:39] "GET /static/fontawesome/css/font-awesome.min.css HTTP/1.1" 200 32422
+[30/Apr/2019 05:41:39] "GET /static/mystyle.css HTTP/1.1" 200 2572
+[30/Apr/2019 05:41:39] "GET /static/index_img/lunbo2.jpg HTTP/1.1" 200 19912
+[30/Apr/2019 05:41:39] "GET /static/index_img/lunbo3.jpg HTTP/1.1" 200 12653
+[30/Apr/2019 05:41:39] "GET /static/index_img/lunbo1.jpg HTTP/1.1" 200 10253
+[30/Apr/2019 05:41:39] "GET /static/index_img/app.png HTTP/1.1" 200 67929
+[30/Apr/2019 05:41:39] "GET /static/index_img/xiyou.png HTTP/1.1" 200 103593
+[30/Apr/2019 05:41:40] "GET /static/index_img/chengjian.jpg HTTP/1.1" 200 73705
+[30/Apr/2019 05:41:44] "GET /static/index_img/index.jpg HTTP/1.1" 200 256911
+[30/Apr/2019 05:41:47] "GET /static/index_img/xiaohui.jpg HTTP/1.1" 200 420874
+[30/Apr/2019 05:41:49] "GET /login/ HTTP/1.1" 200 3861
+[30/Apr/2019 05:41:52] "GET /favicon.ico HTTP/1.1" 200 18
+[30/Apr/2019 05:41:54] "GET /login/?nsukey=lKCHlfl6aQWBY3o3egL2N2Tec2pltiTqh1kVI85tZtN8ZsjLlP5x%2BTxcHwl2veFW16evz%2BNf4lnpOh2eEvjLbRGDZeI%2Bh8NP4MbZ5phvzbd3nSX1PH3PicjBkCNmnHIEPD%2BwTd54t0kka764OL%2Fxzwd4xonYjtMsWrGAHCgRvQk%3D HTTP/1.1" 200 3861
+[30/Apr/2019 05:41:54] "GET /static/bootstrap-3.3.7-dist/js/bootstrap.min.js HTTP/1.1" 200 37045
+[30/Apr/2019 05:41:55] "GET /static/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[30/Apr/2019 05:41:57] "GET /static/bootstrap-3.3.7-dist/css/bootstrap.min.css HTTP/1.1" 200 121200
+[30/Apr/2019 05:42:00] "GET /static/chengjian_img/338905-106.jpg HTTP/1.1" 200 367095
+[30/Apr/2019 05:42:03] "GET /static/index_img/xiaohui.jpg HTTP/1.1" 200 114688
+[30/Apr/2019 05:42:39] "GET /index/?nsukey=jU53PhlTAFJaAQSrcOG80HYyBD86vTu%2FDOvS5%2BAjogbTikpwJ9K2AHSK8i70Ph6muV1f59hhrLRbr32kLIJyuzotfMACbv42FXkmTrcixEweqUNfnm0rZ3XQV0NbJ5HgR33OOi7Be7jQQBXaOtsjqTmiz2vdsU9FvyVEtc8ZChkHbZOzT%2FSDSb3PgF%2B67inK HTTP/1.1" 200 7496
+[30/Apr/2019 05:42:54] "GET /login/?nsukey=lKCHlfl6aQWBY3o3egL2N2Tec2pltiTqh1kVI85tZtN8ZsjLlP5x%2BTxcHwl2veFW16evz%2BNf4lnpOh2eEvjLbRGDZeI%2Bh8NP4MbZ5phvzbd3nSX1PH3PicjBkCNmnHIEPD%2BwTd54t0kka764OL%2Fxzwd4xonYjtMsWrGAHCgRvQk%3D HTTP/1.1" 200 3861
+[30/Apr/2019 05:42:56] "GET /static/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[30/Apr/2019 05:42:58] "GET /static/bootstrap-3.3.7-dist/js/bootstrap.min.js HTTP/1.1" 200 37045
+[30/Apr/2019 05:43:08] "POST /v1/cmdb/community/register HTTP/1.1" 200 18
+[30/Apr/2019 05:43:27] "GET /index/ HTTP/1.1" 200 7496
+[30/Apr/2019 05:43:28] "GET /favicon.ico HTTP/1.1" 200 18
+[30/Apr/2019 05:43:34] "GET /login/ HTTP/1.1" 200 3861
+[30/Apr/2019 05:43:34] "GET /favicon.ico HTTP/1.1" 200 18
+[30/Apr/2019 05:44:44] "GET /login/ HTTP/1.1" 200 3861
+[30/Apr/2019 05:45:08] "POST /v1/cmdb/community/register HTTP/1.1" 200 18
+[30/Apr/2019 05:45:30] "GET /favicon.ico HTTP/1.1" 200 18
+[30/Apr/2019 05:45:32] "GET /index/ HTTP/1.1" 200 7496
+[30/Apr/2019 05:45:33] "GET /static/index_video/chengjian.mp4 HTTP/1.1" 200 114688
+[30/Apr/2019 05:45:33] "GET /favicon.ico HTTP/1.1" 200 18
+[30/Apr/2019 05:45:41] "GET /login/ HTTP/1.1" 200 3861
+[30/Apr/2019 05:45:41] "GET /static/bootstrap-3.3.7-dist/js/bootstrap.min.js HTTP/1.1" 200 37045
+[30/Apr/2019 05:45:41] "GET /static/index_video/chengjian.mp4 HTTP/1.1" 200 1236992
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[30/Apr/2019 05:45:41] "GET /static/index_video/chengjian.mp4 HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('117.32.216.86', 38205)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 88, in handle_error
+    super(ServerHandler, self).handle_error()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 155, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/usr/lib/python3.6/wsgiref/simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+[30/Apr/2019 05:45:41] "GET /static/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[30/Apr/2019 05:45:42] "GET /static/bootstrap-3.3.7-dist/css/bootstrap.min.css HTTP/1.1" 200 121200
+[30/Apr/2019 05:45:45] "GET /static/chengjian_img/338905-106.jpg HTTP/1.1" 200 367095
+[30/Apr/2019 05:45:45] "GET /favicon.ico HTTP/1.1" 200 18
+[30/Apr/2019 05:45:55] "GET /check_login/?input_date=06161089 HTTP/1.1" 200 26
+[30/Apr/2019 05:46:00] "POST /login/ HTTP/1.1" 200 39
+[30/Apr/2019 05:46:00] "GET /teacher_page/ HTTP/1.1" 200 8303
+[30/Apr/2019 05:46:00] "GET /static/chengjian_img/timg.jpg HTTP/1.1" 200 27244
+Not Found: /favicon.ico
+[30/Apr/2019 05:46:00] "GET /favicon.ico HTTP/1.1" 404 3206
+[30/Apr/2019 05:46:04] "GET /teacher_page/?class_id=4 HTTP/1.1" 200 8336
+Not Found: /favicon.ico
+[30/Apr/2019 05:46:04] "GET /favicon.ico HTTP/1.1" 404 3206
+[30/Apr/2019 05:46:07] "GET /index/ HTTP/1.1" 200 7496
+[30/Apr/2019 05:46:08] "GET /static/fontawesome/css/font-awesome.min.css HTTP/1.1" 200 32422
+[30/Apr/2019 05:46:08] "GET /static/index_img/lunbo2.jpg HTTP/1.1" 200 19912
+[30/Apr/2019 05:46:08] "GET /static/mystyle.css HTTP/1.1" 200 2572
+[30/Apr/2019 05:46:08] "GET /static/index_img/lunbo1.jpg HTTP/1.1" 200 10253
+[30/Apr/2019 05:46:08] "GET /static/index_img/lunbo3.jpg HTTP/1.1" 200 12653
+[30/Apr/2019 05:46:08] "GET /static/index_img/chengjian.jpg HTTP/1.1" 200 73705
+[30/Apr/2019 05:46:08] "GET /teacher/pass_homework/6/ HTTP/1.1" 200 4941
+[30/Apr/2019 05:46:08] "GET /static/index_img/app.png HTTP/1.1" 200 67929
+[30/Apr/2019 05:46:08] "GET /teacher_page HTTP/1.1" 301 0
+[30/Apr/2019 05:46:08] "GET /static/chengjian_img/018de657bbc3c70000018c1bcfd6d7.jpg%401280w_1l_2o_100sh.jpg HTTP/1.1" 200 57395
+[30/Apr/2019 05:46:11] "GET /static/index_video/chengjian.mp4 HTTP/1.1" 200 81920
+[30/Apr/2019 05:46:11] "GET /static/index_img/xiyou.png HTTP/1.1" 200 103593
+[30/Apr/2019 05:46:12] "POST /teacher/pass_homework/0/ HTTP/1.1" 200 15
+Not Found: /favicon.ico
+[30/Apr/2019 05:46:12] "GET /favicon.ico HTTP/1.1" 404 3206
+[30/Apr/2019 05:46:12] "GET /teacher/pass_homework/6/ HTTP/1.1" 200 4250
+[30/Apr/2019 05:46:12] "GET /static/bootstrap-3.3.7-dist/css/bootstrap.min.css HTTP/1.1" 304 0
+[30/Apr/2019 05:46:12] "GET /static/mystyle.css HTTP/1.1" 304 0
+[30/Apr/2019 05:46:12] "GET /static/jquery-3.2.1.min.js HTTP/1.1" 304 0
+[30/Apr/2019 05:46:12] "GET /static/chengjian_img/018de657bbc3c70000018c1bcfd6d7.jpg%401280w_1l_2o_100sh.jpg HTTP/1.1" 304 0
+[30/Apr/2019 05:46:12] "GET /static/index_img/xiaohui.jpg HTTP/1.1" 200 420874
+[30/Apr/2019 05:46:12] "GET /teacher_page?class_id=4 HTTP/1.1" 301 0
+[30/Apr/2019 05:46:13] "GET /teacher/pass_homework/6 HTTP/1.1" 301 0
+[30/Apr/2019 05:46:13] "GET /static/index_img/index.jpg HTTP/1.1" 200 256911
+[30/Apr/2019 05:46:14] "GET /teacher_page/ HTTP/1.1" 200 18
+[30/Apr/2019 05:46:16] "GET /teacher_page/ HTTP/1.1" 200 8303
+[30/Apr/2019 05:46:16] "GET /teacher/pass_homework/6/ HTTP/1.1" 200 18
+Not Found: /favicon.ico
+[30/Apr/2019 05:46:16] "GET /favicon.ico HTTP/1.1" 404 3206
+[30/Apr/2019 05:46:18] "GET /teacher/student/detail_list/ HTTP/1.1" 200 3028
+Not Found: /favicon.ico
+[30/Apr/2019 05:46:18] "GET /favicon.ico HTTP/1.1" 404 3206
+[30/Apr/2019 05:46:18] "GET /teacher_page/?class_id=4 HTTP/1.1" 200 18
+[30/Apr/2019 05:46:19] "GET /student/23/ HTTP/1.1" 200 5017
+[30/Apr/2019 05:46:19] "GET /static/student_page_tag/timg%20(1).jpg HTTP/1.1" 200 34503
+[30/Apr/2019 05:46:19] "GET /static/hand_img/timg%20(3).jpg HTTP/1.1" 200 52512
+[30/Apr/2019 05:46:19] "GET /static/student_page_tag/timg%20(2).jpg HTTP/1.1" 200 19371
+[30/Apr/2019 05:46:19] "GET /static/student_page_tag/timg.jpg HTTP/1.1" 200 54034
+[30/Apr/2019 05:46:19] "GET /static/mouth_img/timg%20(4).jpg HTTP/1.1" 200 11949
+Not Found: /favicon.ico
+[30/Apr/2019 05:46:19] "GET /favicon.ico HTTP/1.1" 404 3206
+[30/Apr/2019 05:46:23] "GET /teacher/student/detail_list HTTP/1.1" 301 0
+[30/Apr/2019 05:46:24] "GET /logout/ HTTP/1.1" 200 3861
+[30/Apr/2019 05:46:24] "GET /favicon.ico HTTP/1.1" 200 18
+[30/Apr/2019 05:46:25] "GET /student/23 HTTP/1.1" 301 0
+[30/Apr/2019 05:46:26] "GET /static/index_video/chengjian.mp4 HTTP/1.1" 200 81920
+[30/Apr/2019 05:46:27] "GET /teacher_page HTTP/1.1" 301 0
+[30/Apr/2019 05:46:28] "GET /teacher/student/detail_list/ HTTP/1.1" 200 18
+[30/Apr/2019 05:46:30] "GET /teacher_page/ HTTP/1.1" 200 18
+[30/Apr/2019 05:46:35] "GET /check_login/?input_date=07171008 HTTP/1.1" 200 26
+[30/Apr/2019 05:46:37] "POST /login/ HTTP/1.1" 200 50
+[30/Apr/2019 05:46:37] "GET /student/23/ HTTP/1.1" 200 7260
+[30/Apr/2019 05:46:37] "GET /static/student_page_tag/u%3D3518659575%2C180584971%26fm%3D26%26gp%3D0.jpg HTTP/1.1" 200 41464
+Not Found: /favicon.ico
+[30/Apr/2019 05:46:37] "GET /favicon.ico HTTP/1.1" 404 3206
+[30/Apr/2019 05:46:42] "GET /teacher/student/detail_list HTTP/1.1" 301 0
+[30/Apr/2019 05:46:47] "GET /teacher/student/detail_list/ HTTP/1.1" 200 18
+[30/Apr/2019 05:47:04] "POST /student/23/ HTTP/1.1" 200 84
+[30/Apr/2019 05:47:06] "POST /student/23/ HTTP/1.1" 200 86
+[30/Apr/2019 05:47:08] "POST /v1/cmdb/community/register HTTP/1.1" 200 18
+[30/Apr/2019 05:48:49] "GET /index/ HTTP/1.1" 200 7496
+[30/Apr/2019 05:48:50] "GET /favicon.ico HTTP/1.1" 200 18
+[30/Apr/2019 05:49:08] "POST /v1/cmdb/community/register HTTP/1.1" 200 18
+[30/Apr/2019 05:49:29] "GET /index/?nsukey=27e6NJXpoX9LRgenHrPt5mYxKn14wtBFR%2BH5WJAdm3GUanv1c1X9%2B%2B1OLjILjwtt%2FNq%2FGfojj4QUTN24qOtlfSsddgIFO5ELlDWBrFE7jYjk8IVwyoUCZKxdAtYusDnTAFN3plEkNJeDdSgvnNgA3plw9PXVaLsb7p4%2BQM0VWbfZWMDmgi6QFocldeAbPpX9J55Q1iEPPrwemAgEADjV%2Bw%3D%3D HTTP/1.1" 200 7496
+[30/Apr/2019 05:49:29] "GET /static/fontawesome/css/font-awesome.min.css HTTP/1.1" 200 32422
+[30/Apr/2019 05:49:29] "GET /static/mystyle.css HTTP/1.1" 200 2572
+[30/Apr/2019 05:49:29] "GET /static/index_img/lunbo1.jpg HTTP/1.1" 200 10253
+[30/Apr/2019 05:49:29] "GET /static/index_img/lunbo2.jpg HTTP/1.1" 200 19912
+[30/Apr/2019 05:49:30] "GET /static/index_img/lunbo3.jpg HTTP/1.1" 200 12653
+[30/Apr/2019 05:49:30] "GET /static/index_img/xiyou.png HTTP/1.1" 200 103593
+[30/Apr/2019 05:49:31] "GET /static/index_img/chengjian.jpg HTTP/1.1" 200 73705
+[30/Apr/2019 05:49:32] "GET /static/index_img/app.png HTTP/1.1" 200 67929
+[30/Apr/2019 05:49:32] "GET /static/index_img/xiaohui.jpg HTTP/1.1" 200 420874
+[30/Apr/2019 05:49:35] "GET /static/index_img/index.jpg HTTP/1.1" 200 256911
+[30/Apr/2019 05:49:36] "GET /favicon.ico HTTP/1.1" 200 18
+[30/Apr/2019 05:49:51] "GET /static/index_video/chengjian.mp4 HTTP/1.1" 200 106496
+[30/Apr/2019 05:49:51] "GET /static/index_video/chengjian.mp4 HTTP/1.1" 200 122880
+[30/Apr/2019 05:49:51] "GET /static/index_video/chengjian.mp4 HTTP/1.1" 200 57344
+[30/Apr/2019 05:50:01] "GET /static/index_video/chengjian.mp4 HTTP/1.1" 200 57344
+[30/Apr/2019 05:50:24] "GET /index/ HTTP/1.1" 200 7496
+[30/Apr/2019 05:50:25] "GET /static/fontawesome/css/font-awesome.min.css HTTP/1.1" 200 32422
+[30/Apr/2019 05:50:25] "GET /static/mystyle.css HTTP/1.1" 200 2572
+[30/Apr/2019 05:50:26] "GET /static/index_img/lunbo2.jpg HTTP/1.1" 200 19912
+[30/Apr/2019 05:50:26] "GET /static/index_img/lunbo1.jpg HTTP/1.1" 200 10253
+[30/Apr/2019 05:50:26] "GET /static/index_img/lunbo3.jpg HTTP/1.1" 200 12653
+[30/Apr/2019 05:50:27] "GET /static/index_img/chengjian.jpg HTTP/1.1" 200 73705
+[30/Apr/2019 05:50:27] "GET /static/index_img/app.png HTTP/1.1" 200 67929
+[30/Apr/2019 05:50:29] "GET /static/index_img/xiyou.png HTTP/1.1" 200 103593
+[30/Apr/2019 05:50:30] "GET /login/ HTTP/1.1" 200 3861
+[30/Apr/2019 05:50:30] "GET /static/index_img/index.jpg HTTP/1.1" 200 188416
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[30/Apr/2019 05:50:30] "GET /static/index_img/index.jpg HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('223.104.11.64', 39459)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 88, in handle_error
+    super(ServerHandler, self).handle_error()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 155, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/usr/lib/python3.6/wsgiref/simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+[30/Apr/2019 05:50:30] "GET /static/index_img/xiaohui.jpg HTTP/1.1" 200 393216
+[30/Apr/2019 05:50:30] "GET /static/index_video/chengjian.mp4 HTTP/1.1" 200 139264
+[30/Apr/2019 05:50:30] "GET /static/bootstrap-3.3.7-dist/js/bootstrap.min.js HTTP/1.1" 200 37045
+[30/Apr/2019 05:50:31] "GET /static/bootstrap-3.3.7-dist/css/bootstrap.min.css HTTP/1.1" 200 121200
+[30/Apr/2019 05:50:32] "GET /static/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[30/Apr/2019 05:50:34] "GET /static/chengjian_img/338905-106.jpg HTTP/1.1" 200 367095
+[30/Apr/2019 05:50:35] "GET /favicon.ico HTTP/1.1" 200 18
+[30/Apr/2019 05:50:35] "GET /index/ HTTP/1.1" 200 7496
+[30/Apr/2019 05:50:35] "POST /login/ HTTP/1.1" 200 69
+[30/Apr/2019 05:50:38] "GET /check_login/?input_date=06161089 HTTP/1.1" 200 26
+[30/Apr/2019 05:50:43] "POST /login/ HTTP/1.1" 200 69
+[30/Apr/2019 05:50:53] "POST /login/ HTTP/1.1" 200 39
+[30/Apr/2019 05:50:53] "GET /teacher_page/ HTTP/1.1" 200 8303
+[30/Apr/2019 05:50:54] "GET /static/chengjian_img/timg.jpg HTTP/1.1" 200 27244
+Not Found: /favicon.ico
+[30/Apr/2019 05:50:54] "GET /favicon.ico HTTP/1.1" 404 3206
+[30/Apr/2019 05:50:59] "GET /teacher/pass_homework/6/ HTTP/1.1" 200 4250
+[30/Apr/2019 05:50:59] "GET /static/chengjian_img/018de657bbc3c70000018c1bcfd6d7.jpg%401280w_1l_2o_100sh.jpg HTTP/1.1" 200 57395
+[30/Apr/2019 05:51:05] "GET /teacher_page/ HTTP/1.1" 200 8303
+[30/Apr/2019 05:51:06] "GET /login/ HTTP/1.1" 200 3861
+[30/Apr/2019 05:51:07] "GET /static/index_img/xiaohui.jpg HTTP/1.1" 200 253952
+[30/Apr/2019 05:51:07] "GET /static/index_img/index.jpg HTTP/1.1" 200 122880
+[30/Apr/2019 05:51:07] "GET /static/index_video/chengjian.mp4 HTTP/1.1" 200 114688
+[30/Apr/2019 05:51:08] "POST /v1/cmdb/community/register HTTP/1.1" 200 18
+[30/Apr/2019 05:52:39] "GET /index/?nsukey=VY7CzL8%2FawamW7dXSZ4jJ7QMG12wSSaAAICajUWCS%2B17lOfhGnNk0xtmuaODIzj0otZArMv3CYTZ%2FFX1OrABUAKUsVPfw0vtqoCYzFPpArABlKhNHjxjzTfaq56haAXwVvH%2Buq9Yveqi%2BvIuDufXF08KDkg45oxVzJ6zu%2FHXyQI0J0EdurEYmFPY1WJdlGpW1RAIK8ap3UjmXVYe42bnAw%3D%3D HTTP/1.1" 200 7496
+[30/Apr/2019 05:52:40] "GET /static/index_img/xiaohui.jpg HTTP/1.1" 200 420874
+[30/Apr/2019 05:52:42] "GET /favicon.ico HTTP/1.1" 200 18
+[30/Apr/2019 05:52:42] "GET /login/ HTTP/1.1" 200 3861
+[30/Apr/2019 05:52:42] "GET /index/ HTTP/1.1" 200 7496
+[30/Apr/2019 05:52:42] "GET /static/chengjian_img/338905-106.jpg HTTP/1.1" 200 57344
+[30/Apr/2019 05:52:42] "GET /favicon.ico HTTP/1.1" 200 18
+[30/Apr/2019 05:52:43] "GET /login/?nsukey=Oz%2ByChLk0IuJIfSaUwNdpH0uJ8gP3YtJ23005f4ghbFpla2v211AaNIXzkD0JPdskhMzN2nfRscCFS5wQuFAEq8Thv3Wvz8wFqzLfvwOyramK9OTj%2FSi6rDj4upJPX5ZRTs5f7%2FIyGPYlnh45NbZlYGAQ9ZSks9X0%2FIGcrlPOBoLFXAa3L7OyM2t0jkttTDmU2WPzkhv7SlzUO4yANDLHA%3D%3D HTTP/1.1" 200 3861
+[30/Apr/2019 05:52:46] "GET /login/ HTTP/1.1" 200 3861
+[30/Apr/2019 05:52:46] "GET /static/index_img/xiaohui.jpg HTTP/1.1" 200 319488
+[30/Apr/2019 05:52:46] "GET /static/index_video/chengjian.mp4 HTTP/1.1" 200 229376
+[30/Apr/2019 05:52:46] "GET /static/index_img/index.jpg HTTP/1.1" 200 155648
+Not Found: /favicon.ico
+[30/Apr/2019 05:52:47] "GET /favicon.ico HTTP/1.1" 404 3206
+[30/Apr/2019 05:52:48] "GET /static/chengjian_img/338905-106.jpg HTTP/1.1" 200 367095
+[30/Apr/2019 05:52:48] "GET /favicon.ico HTTP/1.1" 200 18
+[30/Apr/2019 05:52:52] "GET /check_login/?input_date=07171008 HTTP/1.1" 200 26
+[30/Apr/2019 05:52:53] "GET /check_login/?input_date=06161089 HTTP/1.1" 200 26
+[30/Apr/2019 05:52:55] "POST /login/ HTTP/1.1" 200 50
+[30/Apr/2019 05:52:55] "GET /student/23/ HTTP/1.1" 200 7260
+[30/Apr/2019 05:52:55] "GET /static/student_page_tag/timg.jpg HTTP/1.1" 200 54034
+[30/Apr/2019 05:52:55] "GET /static/student_page_tag/timg%20(1).jpg HTTP/1.1" 200 34503
+[30/Apr/2019 05:52:55] "GET /static/mouth_img/timg%20(4).jpg HTTP/1.1" 200 11949
+[30/Apr/2019 05:52:55] "GET /static/student_page_tag/u%3D3518659575%2C180584971%26fm%3D26%26gp%3D0.jpg HTTP/1.1" 200 41464
+[30/Apr/2019 05:52:55] "GET /static/hand_img/timg%20(3).jpg HTTP/1.1" 200 52512
+[30/Apr/2019 05:52:55] "GET /static/student_page_tag/timg%20(2).jpg HTTP/1.1" 200 19371
+[30/Apr/2019 05:52:58] "POST /login/ HTTP/1.1" 200 39
+[30/Apr/2019 05:52:58] "GET /teacher_page/ HTTP/1.1" 200 8303
+[30/Apr/2019 05:52:58] "GET /static/chengjian_img/timg.jpg HTTP/1.1" 200 27244
+Not Found: /favicon.ico
+[30/Apr/2019 05:52:58] "GET /favicon.ico HTTP/1.1" 404 3206
+[30/Apr/2019 05:53:09] "POST /v1/cmdb/community/register HTTP/1.1" 200 18
+[30/Apr/2019 05:53:10] "GET /teacher_page/ HTTP/1.1" 200 8303
+[30/Apr/2019 05:53:11] "GET /login/ HTTP/1.1" 200 3861
+[30/Apr/2019 05:53:17] "GET /static/index_img/xiaohui.jpg HTTP/1.1" 200 420874
+[30/Apr/2019 05:53:17] "GET /teacher/pass_homework/6/ HTTP/1.1" 200 4250
+[30/Apr/2019 05:53:18] "GET /static/chengjian_img/018de657bbc3c70000018c1bcfd6d7.jpg%401280w_1l_2o_100sh.jpg HTTP/1.1" 200 57395
+[30/Apr/2019 05:53:19] "GET /static/index_img/index.jpg HTTP/1.1" 200 256911
+[30/Apr/2019 05:53:27] "GET /teacher_page/ HTTP/1.1" 200 8303
+[30/Apr/2019 05:53:39] "GET /index/?nsukey=VY7CzL8%2FawamW7dXSZ4jJ7QMG12wSSaAAICajUWCS%2B17lOfhGnNk0xtmuaODIzj0otZArMv3CYTZ%2FFX1OrABUAKUsVPfw0vtqoCYzFPpArABlKhNHjxjzTfaq56haAXwVvH%2Buq9Yveqi%2BvIuDufXF08KDkg45oxVzJ6zu%2FHXyQI0J0EdurEYmFPY1WJdlGpW1RAIK8ap3UjmXVYe42bnAw%3D%3D HTTP/1.1" 200 7496
+[30/Apr/2019 05:54:06] "GET /login/ HTTP/1.1" 200 3861
+[30/Apr/2019 05:54:07] "GET /static/index_video/chengjian.mp4 HTTP/1.1" 200 6840320
+[30/Apr/2019 05:54:12] "GET /check_login/?input_date=06161089 HTTP/1.1" 200 26
+[30/Apr/2019 05:54:15] "POST /login/ HTTP/1.1" 200 39
+[30/Apr/2019 05:54:15] "GET /teacher_page/ HTTP/1.1" 200 8303
+[30/Apr/2019 05:54:17] "GET /teacher/pass_homework/6 HTTP/1.1" 301 0
+[30/Apr/2019 05:54:17] "GET /teacher/homework/ HTTP/1.1" 200 3640
+[30/Apr/2019 05:54:23] "GET /teacher/student/add/ HTTP/1.1" 200 4266
+[30/Apr/2019 05:54:25] "GET /teacher_page/ HTTP/1.1" 200 8303
+[30/Apr/2019 05:54:33] "GET /teacher/student/add/ HTTP/1.1" 200 4266
+[30/Apr/2019 05:54:45] "GET /teacher/student/detail_list/ HTTP/1.1" 200 3028
+[30/Apr/2019 05:54:46] "GET /student/23/ HTTP/1.1" 200 5017
+[30/Apr/2019 05:54:46] "GET /static/student_page_tag/timg.jpg HTTP/1.1" 200 54034
+[30/Apr/2019 05:54:46] "GET /static/student_page_tag/timg%20(2).jpg HTTP/1.1" 200 19371
+[30/Apr/2019 05:54:46] "GET /static/student_page_tag/timg%20(1).jpg HTTP/1.1" 200 34503
+[30/Apr/2019 05:54:46] "GET /static/mouth_img/timg%20(4).jpg HTTP/1.1" 200 11949
+[30/Apr/2019 05:54:46] "GET /static/hand_img/timg%20(3).jpg HTTP/1.1" 200 52512
+[30/Apr/2019 05:54:48] "POST /teacher/homework/ HTTP/1.1" 200 18
+[30/Apr/2019 05:54:51] "GET /teacher/homework/ HTTP/1.1" 200 3640
+[30/Apr/2019 05:54:53] "POST /teacher/homework/ HTTP/1.1" 200 18
+[30/Apr/2019 05:54:54] "GET /teacher/homework/ HTTP/1.1" 200 3640
+/usr/local/lib/python3.6/dist-packages/django/db/models/fields/__init__.py:1451: RuntimeWarning: DateTimeField Homework.delay_time received a naive datetime (2019-04-30 00:00:00) while time zone support is active.
+  RuntimeWarning)
+[30/Apr/2019 05:54:59] "POST /teacher/homework/ HTTP/1.1" 302 0
+[30/Apr/2019 05:55:00] "GET /teacher_page/ HTTP/1.1" 200 8303
+[30/Apr/2019 05:55:04] "GET /teacher_page/ HTTP/1.1" 200 8303
+[30/Apr/2019 05:55:09] "POST /v1/cmdb/community/register HTTP/1.1" 200 18
+[30/Apr/2019 05:55:10] "GET /teacher/pass_homework/6/ HTTP/1.1" 200 5005
+[30/Apr/2019 05:55:17] "GET /teacher/student/detail_list/ HTTP/1.1" 200 3028
+[30/Apr/2019 05:55:20] "GET /student/22/ HTTP/1.1" 200 18
+[30/Apr/2019 05:55:22] "GET /teacher/student/detail_list/ HTTP/1.1" 200 3028
+[30/Apr/2019 05:55:23] "GET /teacher/student/add HTTP/1.1" 301 0
+[30/Apr/2019 05:55:24] "GET /teacher_page/ HTTP/1.1" 200 8303
+[30/Apr/2019 05:55:24] "GET /teacher/homework/ HTTP/1.1" 200 3640
+[30/Apr/2019 05:55:25] "GET /teacher_page/ HTTP/1.1" 200 8303
+[30/Apr/2019 05:55:25] "GET /login/ HTTP/1.1" 200 3861
+[30/Apr/2019 05:55:26] "GET /static/index_video/chengjian.mp4 HTTP/1.1" 200 237568
+[30/Apr/2019 05:55:45] "GET /teacher/student/detail_list HTTP/1.1" 301 0
+[30/Apr/2019 05:55:46] "GET /index/?nsukey=nVbnZCiofT5DlSP%2Baf3G0Old4LFJZI55O3zHAYbaJwajYkjbyh6NPIibxGyfAdrPCqzLzEjukWsCmFb5rR%2FzM0orFWHaeFQVpdFsKpgSFq0C0qmXV6HMAauUBNDY%2B8mcekA5hkFP9PNGMBzPu4wLkQoUzpuy%2FsQ3F0SqHLx4x8bOIIYinbR6EXLncl7kqnutnnk9MMYPksCvKjS7GeE1%2Bw%3D%3D HTTP/1.1" 200 7496
+Not Found: /favicon.ico
+[30/Apr/2019 05:55:46] "GET /favicon.ico HTTP/1.1" 404 3206
+[30/Apr/2019 05:55:47] "GET /student/23 HTTP/1.1" 301 0
+[30/Apr/2019 05:55:47] "GET /student/23/ HTTP/1.1" 200 18
+[30/Apr/2019 05:55:48] "GET /login/ HTTP/1.1" 200 3861
+[30/Apr/2019 05:55:49] "GET /login/?nsukey=1tNGIr0Yc5qSS8cIE3NLePEe3NfXw%2FpPBuMIP5x916aunjttIuj6AlgF%2FrLIwFmN7SnokT19C3QPtxlb%2Ft9W%2BIw%2BVn6PfN0b1IKyK9YkRWgVAROtZ2gDclkLUG6vUVXkoDsUFqqIZs9FA7xe9VIi2SCU%2FHUhnkfpsMkvMeUG%2Bq0ZIM5IyqrpYyMYwWtunRZX2yfE4eJlnDu7wvKcXFH7WA%3D%3D HTTP/1.1" 200 3861
+[30/Apr/2019 05:55:56] "GET /check_login/?input_date=06161089 HTTP/1.1" 200 26
+[30/Apr/2019 05:55:59] "POST /login/ HTTP/1.1" 200 39
+[30/Apr/2019 05:55:59] "GET /teacher_page/ HTTP/1.1" 200 8303
+[30/Apr/2019 05:56:06] "GET /teacher/pass_homework/6/ HTTP/1.1" 200 5005
+[30/Apr/2019 05:56:13] "GET /teacher_page/ HTTP/1.1" 200 8303
+[30/Apr/2019 05:56:18] "POST /login/ HTTP/1.1" 200 69
+[30/Apr/2019 05:56:46] "GET /index/?nsukey=nVbnZCiofT5DlSP%2Baf3G0Old4LFJZI55O3zHAYbaJwajYkjbyh6NPIibxGyfAdrPCqzLzEjukWsCmFb5rR%2FzM0orFWHaeFQVpdFsKpgSFq0C0qmXV6HMAauUBNDY%2B8mcekA5hkFP9PNGMBzPu4wLkQoUzpuy%2FsQ3F0SqHLx4x8bOIIYinbR6EXLncl7kqnutnnk9MMYPksCvKjS7GeE1%2Bw%3D%3D HTTP/1.1" 200 7496
+[30/Apr/2019 05:57:09] "POST /v1/cmdb/community/register HTTP/1.1" 200 18

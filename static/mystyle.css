@@ -57,6 +57,32 @@
     opacity: 0.5;
 }
 
+#index{
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    z-index: -1000;
+    zoom: 1;
+    background-color: #fff;
+    /*背景不重复*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    /*居中左对齐*/
+    background-position: center 0;
+
+    /*透明度模糊效果*/
+    /*-webkit-filter: blur(5px);*/
+    /*filter: blur(px);*/
+    /*透明度深度效果*/
+    /*filter: alpha(opacity:50);*/
+    /*-moz-opacity: 0.5;*/
+    /*opacity: 0.5;*/
+}
+
 
 .list-group-item{
     margin-top: 10%;
@@ -104,6 +130,6 @@
 
 /*index*/
 .big-img{
-    width: 100%;
-    height: 100%;
+    width: 100%;!important;
+    height: 100%;!important;
 }

@@ -2,12 +2,12 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+{#    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">#}
+{#    <meta http-equiv="X-UA-Compatible" content="IE=edge">#}
+{#    <meta name="viewport" content="width=device-width, initial-scale=1">#}
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+{#    <meta name="description" content="">#}
+{#    <meta name="author" content="">#}
     <title>Carousel Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
@@ -39,17 +39,17 @@
     <!-- Three columns of text below the carousel -->
     <div class="row">
 
-        <div class="col-lg-4">
+        <div class="col-xs-4">
             <img class="img-circle" src="{% static 'student_page_tag/timg.jpg' %}" alt="Generic placeholder image"
                  width="140" height="140">
             <h2 class="height">身高:{{ sign.height }}CM</h2>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        <div class="col-xs-4">
             <img class="img-circle" src="{% static 'student_page_tag/timg (1).jpg' %}" alt="Generic placeholder image"
                  width="140" height="140">
             <h2 class="weight">体重:{{ sign.weight }}Kg</h2>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        <div class="col-xs-4">
             <img class="img-circle" src="{% static 'student_page_tag/timg (2).jpg' %}" alt="Generic placeholder image"
                  width="140" height="140">
             <h2 class="temperature">体温:{{ sign.temperature }}度</h2>
@@ -62,10 +62,10 @@
     <hr class="featurette-divider">
 
     <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
+        <div class="col-xs-7 col-xs-push-5">
             <h2 class="featurette-heading">这是你的手部图片^_^ &nbsp;<span class="text-muted">See your hand</span></h2>
         </div>
-        <div class="col-md-5 col-md-pull-7">
+        <div class="col-xs-5 col-xs-pull-7">
             <img class="featurette-image img-responsive center-block" src="{% static 'hand_img/timg (3).jpg' %}"
                  alt="Generic placeholder image">
         </div>
@@ -74,10 +74,10 @@
     <hr class="featurette-divider">
 
     <div class="row featurette">
-        <div class="col-md-7">
+        <div class="col-xs-7">
             <h2 class="featurette-heading">这是你的口部图片^_^ &nbsp;<span class="text-muted">See your mouth</span></h2>
         </div>
-        <div class="col-md-5">
+        <div class="col-xs-5">
             <img class="featurette-image img-responsive center-block" src="{% static 'mouth_img/timg (4).jpg' %}"
                  alt="Generic placeholder image">
         </div>

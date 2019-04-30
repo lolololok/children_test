@@ -1,11 +1,11 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+{#    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">#}
+{#    <meta http-equiv="X-UA-Compatible" content="IE=edge">#}
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+{#    <meta name="description" content="">#}
+{#    <meta name="author" content="">#}
 
     <title>教师查看页面</title>
     <!-- Bootstrap core CSS -->
@@ -22,7 +22,7 @@
 {#<script src="{% static 'bootstrap-3.3.7-dist/js/bootstrap.min.js' %}"></script>#}
 <div id="con_img" style='background-image: url("{% static 'chengjian_img/timg.jpg' %}")'></div>
 {% include 'teacher_nav.html' %}
-<div class="list-group col-md-3 t-list">
+<div class="list-group col-xs-3 t-list">
     <a href="/teacher/homework/" class="list-group-item list-group-item-success">布置作业</a>
     <a href="/teacher/pass_homework/{{ teacher_obj.pk }}/" class="list-group-item list-group-item-success">查看往期作业</a>
     {% if 'view_detail' in permission_list %}
@@ -39,7 +39,7 @@
 
 </div>
 
-<div class="col-md-9 t-show pull-right">
+<div class="col-xs-9 t-show pull-right">
     <h3>学生信息
         {% if 'add' in permission_list %}
             <a href="/teacher/student/add/" class="btn btn-info pull-right add_student">添加</a>
