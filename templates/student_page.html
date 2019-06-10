@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8">
@@ -64,9 +64,10 @@
     <div class="row featurette">
         <div class="col-xs-7 col-xs-push-5">
             <h2 class="featurette-heading">这是你的手部图片^_^ &nbsp;<span class="text-muted">See your hand</span></h2>
+	<h4>{{sign.sign_result}}</h4>
         </div>
         <div class="col-xs-5 col-xs-pull-7">
-            <img class="featurette-image img-responsive center-block" src="{% static 'hand_img/timg (3).jpg' %}"
+            <img class="featurette-image img-responsive center-block" src='/static/hand_img/{{sign.hand_img}}'
                  alt="Generic placeholder image">
         </div>
     </div>
@@ -76,9 +77,10 @@
     <div class="row featurette">
         <div class="col-xs-7">
             <h2 class="featurette-heading">这是你的口部图片^_^ &nbsp;<span class="text-muted">See your mouth</span></h2>
+            <h4>{{sign.sign_result}}</h4>
         </div>
         <div class="col-xs-5">
-            <img class="featurette-image img-responsive center-block" src="{% static 'mouth_img/timg (4).jpg' %}"
+            <img class="featurette-image img-responsive center-block" src='/static/mouth_img/{{sign.mouth_img}}'
                  alt="Generic placeholder image">
         </div>
     </div>

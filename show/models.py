@@ -72,10 +72,11 @@ class Sign(models.Model):
     height = models.CharField(max_length=5)
     weight = models.CharField(max_length=5)
     temperature = models.CharField(max_length=4)
-    hand_img = models.FileField(upload_to='hand_img/')
-    mouth_img = models.FileField(upload_to='mouth_img/')
+    hand_img = models.CharField(max_length=300, default=None)
+    mouth_img = models.CharField(max_length=300, default=None)
     student = models.ManyToManyField(to='Student')
     create_time = models.DateTimeField(auto_now_add=True)
+    sign_result = models.CharField(max_length=300, default=None)
     def __str__(self):
         return str(self.create_time)
 
